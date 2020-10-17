@@ -4,6 +4,7 @@
 
 #page-create-orphanage main {
   flex: 1;
+  max-width: 1860px;
 }
 
 form.create-orphanage-form {
