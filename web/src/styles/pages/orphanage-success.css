@@ -1,0 +1,102 @@
+#main {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(329.54deg, #37C77F 0%, #12ae60 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 350px;
+}
+
+#main .success {
+    position: relative;
+    width: 1340px;
+    height: 520px;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+
+#main .success main h1 {
+    font: 800 18px Nunito, sans-serif;
+    font-style: normal;
+    font-size: 65px;
+    line-height: 80px;
+
+    position: absolute;
+    left: 21.94%;
+    right: 60.76%;
+    top: 19.39%;
+    bottom: 20.51%;    
+
+    color: #FFFFFF;
+}
+
+#main .success main span {
+    position: absolute;
+    left: 16.94%;
+    right: 55.83%;
+    top: 43.05%;
+    bottom: 44.51%;
+
+    font: 600 24px Nunito, sans-serif;
+    font-style: normal;
+    line-height: 34px;
+    text-align: center;
+
+    color: #FFFFFF
+}
+
+#main .success img {
+    display: flex;
+
+    position: absolute;
+    left: 52.64%;
+    right: 19.58%;
+    top: 5.12%;
+    
+}
+
+.success .back-To-Map span {
+    color: #FFFFFF;
+    
+}
+
+.success .back-To-Map {
+    
+    height: 64px;
+    width: 243px;
+    left: 319px;
+    top: 515px;
+    border-radius: 20px;
+    
+    
+    position: absolute;
+    left: 21.15%;
+    right: 60.97%;
+    top: 77.8%;
+    bottom: 29.39%;
+    
+    background: #319262;
+    color: #FFFFFF;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+       
+
+
+    transition: background-color 0.3s;
+}
+
+.success .back-To-Map:hover {
+    background: #3BD689;
+    color:#FFFFFF;
+}   
