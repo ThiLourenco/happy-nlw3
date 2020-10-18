@@ -147,7 +147,7 @@
   color: #FF669D;
 }
 
-.orphanage-details .orphanage-details-content button.contact-button {
+.orphanage-details .orphanage-details-content a.contact-button {
   margin-top: 64px;
 
   width: 100%;
@@ -163,13 +163,19 @@
   justify-content: center;
   align-items: center;
 
+  font: 800 18px Nunito, sans-serif;
+  font-style: normal;  
+  line-height: 26px;
+  text-decoration: none;
+  
+
   transition: background-color 0.2s;
 }
 
-.orphanage-details .orphanage-details-content button.contact-button svg {
+.orphanage-details .orphanage-details-content a.contact-button svg {
   margin-right: 16px;
 }
 
-.orphanage-details .orphanage-details-content button.contact-button:hover {
+.orphanage-details .orphanage-details-content a.contact-button:hover {
   background: #36CF82;
 }

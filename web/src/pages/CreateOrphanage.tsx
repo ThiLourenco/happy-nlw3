@@ -18,6 +18,7 @@ export default function CreateOrphanage() {
 
   const [name, setName] = useState('');
   const [about, setAbout] = useState('');
+  const [phone, setPhone] = useState('');
   const [instructions, setInstructions] = useState('');
   const [opening_hours, setOpeningHours] = useState('');
   const [open_on_weekends, setOpenOnWeekends] = useState(true);
@@ -58,6 +59,7 @@ export default function CreateOrphanage() {
 
     data.append('name', name);
     data.append('about', about);
+    data.append('phone', String(phone));
     data.append('latitude', String(latitude));
     data.append('longitude', String(longitude));
     data.append('instructions', instructions);
@@ -107,6 +109,11 @@ export default function CreateOrphanage() {
             <div className="input-block">
               <label htmlFor="name">Nome</label>
               <input id="name" value={name} onChange={event => setName(event.target.value)} />
+            </div>
+
+            <div className="input-block">
+              <label htmlFor="name">Telefone</label>
+              <input id="name" value={phone} onChange={event => setPhone(event.target.value)} />
             </div>
 
             <div className="input-block">

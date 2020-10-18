@@ -10,6 +10,15 @@ export default class Orphanage {
 	name: string;
 
 	@Column()
+	phone: number;
+
+	@Column()
+	email: string;
+
+	@Column()
+	password: string;
+
+	@Column()
 	latitude: number;
 
 	@Column()

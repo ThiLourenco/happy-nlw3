@@ -15,7 +15,19 @@ export class createOrphanages1602602625001 implements MigrationInterface {
 					},
 					{
 						name: 'name',
-						type: 'varchar'
+						type: 'string'
+					},
+					{
+						name: 'phone',
+						type: 'number',
+					},
+					{
+						name: 'email',
+						type: 'string',
+					},
+					{
+						name: 'password',
+						type: 'string',
 					},
 					{ 
 						name: 'latitude',
