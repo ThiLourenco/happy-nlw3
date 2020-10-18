@@ -1,4 +1,4 @@
-import React, { useEffect, useState, Component } from "react";
+import React, { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { FiClock, FiInfo } from "react-icons/fi";
 import { Map, Marker, TileLayer } from "react-leaflet";
@@ -41,7 +41,7 @@ export default function Orphanage() {
   }, [params.id]);
   
   if(!orphanage) {
-    return <p>Carregando...</p>;
+    return  <h1>Carregando detalhes...</h1>
   }
 
   return (
