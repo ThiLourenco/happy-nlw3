@@ -112,7 +112,7 @@ export default function CreateOrphanage() {
             </div>
 
             <div className="input-block">
-              <label htmlFor="name">Telefone</label>
+              <label htmlFor="whatsapp">Whatsapp</label>
               <input id="name" value={phone} onChange={event => setPhone(event.target.value)} />
             </div>
 

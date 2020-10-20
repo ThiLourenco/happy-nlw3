@@ -1,0 +1,110 @@
+#login {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+}
+
+form.form-login {
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    background: #FFFFFF;
+    /* border: 1px solid #D3E2E5; */
+    border-radius: 20px;
+  
+    padding: 64px 80px;
+  
+    overflow: hidden;
+  }
+  
+  
+  form.form-login fieldset {
+    border: 0;
+    width: 400px;
+   
+  }
+  
+  
+  form.form-login fieldset legend {
+    width: 100%;
+    font-size: 32px;
+    line-height: 34px;
+    color: #5C8599;
+    font-weight: 700;
+
+  }
+
+  form.form-login .input-block input{
+    width: 395px;
+    height: 64px;
+    padding: 0 16px;
+
+    background: #F5F8FA;
+    border: 1px solid #D3E2E5;
+    border-radius: 20px;
+    outline: none;
+    color: #5C8599;
+}
+ 
+  form.form-login .input-block{
+    margin-top: 24px;
+    
+  }
+  
+  form.form-login .input-block label {    
+    display: flex;
+    font: 600 16px Nunito, sans-serif; 
+    color: #8FA7B3;
+    line-height: 22px;
+    margin-bottom: 8px; 
+  }
+
+  form.form-login .remember-me {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 40px;  
+  }
+
+  form.form-login .remember-me label {
+    font: 600 16px Nunito, sans-serif; 
+    color: #8FA7B3;
+    line-height: 22px;
+    padding-right: 140px; 
+  }
+
+  form.form-login input#checkbox {
+    width: 24px;
+    height: 24px;
+    background: #F5F8FA;
+
+    border: 1px solid #D3E2E5;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+
+  form.form-login .remember-me span {
+    font: 600 16px Nunito, sans-serif; 
+    color: #8FA7B3;
+    line-height: 22px;
+    
+    padding-right: 8px;
+    
+  }
+
+form.form-login button {
+    width: 395px;
+    height: 64px;
+    border: 0;
+    cursor: pointer;
+    background: #3CDC8C;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-weight: 800;
+  
+    transition: background-color 0.2s;
+}
+
+form.form-login button:hover {
+    background: #36CF82;
+}
