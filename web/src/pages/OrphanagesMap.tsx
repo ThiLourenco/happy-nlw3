@@ -46,7 +46,9 @@ function OrphanagesMap() {
 				center={[-22.8803892,-42.0363707]}
 				zoom={14.25}
 				style={{ width: '100%', height:'100%'}}
-			>
+			>	
+				{/*Caso não queira utilizar o mapbox utilize a linha de código abaixo, caso tenha uma conta no mapbox, siga as instruções no readme para incluir a seu token do mapbox no projeto/*}
+
 				{/*<TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" /> */}
 				<TileLayer 
 						url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`} 
