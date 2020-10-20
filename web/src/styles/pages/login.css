@@ -8,11 +8,12 @@ form.form-login {
     justify-content: center;
     align-items: center;
     width: 600px;
+    max-width: 600px;
+    max-height: 520px;
     background: #FFFFFF;
-    /* border: 1px solid #D3E2E5; */
     border-radius: 20px;
   
-    padding: 64px 80px;
+    padding: 64px 100px;
   
     overflow: hidden;
   }
@@ -108,3 +109,27 @@ form.form-login button {
 form.form-login button:hover {
     background: #36CF82;
 }
+
+#login .back-home {
+  position: relative;
+  height: 48px;
+  width: 48px;
+  right: -430px;
+  top: -500px;
+
+  border-radius: 16px;
+  background: #EBF2F5;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+
+  transition: background-color 0.3s;
+}
+
+#login .back-home:hover {
+  background: #12AFCB;
+  color: #0000
+
+} 
