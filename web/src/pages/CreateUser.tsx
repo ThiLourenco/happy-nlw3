@@ -3,20 +3,25 @@ import { FiArrowLeft } from 'react-icons/fi';
 import { Link, } from 'react-router-dom';
 
 import PageLogin from "../components/PageLogin";
-import '../styles/pages/login.css';
+import '../styles/pages/createuser.css';
 
 
-export default function Login() {
+export default function CreateUser() {
 
 	return (
 		
-	<div id="login">
+	<div id="singup">
 		<PageLogin />
 		
 		<aside>	
-			<form className="form-login" method="POST">
+			<form className="create-login" method="POST">
 				<fieldset>
-					<legend>Fazer login</legend>
+					<legend>Cadastrar Usuário</legend>
+					<div className="input-block">
+						<label htmlFor="name">Nome</label>
+						<input id="name"/>	
+					</div>
+
 					<div className="input-block">
 						<label htmlFor="email">E-mail</label>
 						<input id="name"/>	
@@ -27,28 +32,14 @@ export default function Login() {
 						<input id="name" />
 					</div>
 
-					<div className="remember-me">
-						<input id="checkbox" type="checkbox" name="checked"></input>
-						<label htmlFor="remember">Lembrar-me</label>
-					
-					</div>
-					<div className="links">
-							<Link to="/recover-password" className="forgot-password">
-								Esqueci a senha
-							</Link>
-
-							<Link to="/singup" className="new-user">
-								Cadastrar usuário
-							</Link>
-						</div>
 				</fieldset>
 				
 				<button className="button-login" type="submit">
-					Entrar
+					Cadastrar
 				</button>
 			</form>
 			
-			<Link to="/" className="back-home">
+			<Link to="/singin" className="back-home">
 					<FiArrowLeft size={26} color="#15C3D6"  />
 			</Link>
 			

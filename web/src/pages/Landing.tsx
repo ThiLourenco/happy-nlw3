@@ -21,7 +21,7 @@ function Landing() {
 				<strong>Cabo Frio</strong>
 				<span>Rio de Janeiro</span>
 				</div>
-				<Link to="/login" className="enter-restrict">
+				<Link to="/singin" className="enter-restrict">
 					<span>Acesso Restrito</span>
 				</Link>
 				<Link to="/app" className="enter-app">
