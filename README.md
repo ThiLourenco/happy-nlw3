@@ -110,8 +110,6 @@ Siga as instruções para usar o mapbox no lugar do openstreetmap.
 - Em "https://account.mapbox.com/", copie seu token.
 - Na raiz do projeto web crie um arquivo chamado ".env"
 - Dentro desse arquivo, digite "REACT_APP_MAPBOX_TOKEN =" e cole seu token logo depois.
-- Entre no arquivo "OrphanagesMap.tsx", descomente o trecho de código correspondente as linhas 34, 35 e 36.
-- No mesmo arquivo, comente a linha 32.
 
 Se você fez tudo corretamente, estás usando a API do mapbox com seu Token na página do mapa. 😄
 
