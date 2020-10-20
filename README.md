@@ -8,7 +8,7 @@
 O Happy é uma aplicação que conecta pessoas à casas de acolhimento institucional para fazer o dia de muitas crianças mais feliz 💜
 
 <h1 align="center" >
-  <img alt="happy" title="happy" src="./assets/banner.png" />
+  <img alt="happy" title="happy" src="./assets/happy.png" />
 </h1>
 
 <h4 align="center"> 
@@ -118,6 +118,7 @@ Siga as instruções para usar o mapbox no lugar do openstreetmap.
 
 Se você fez tudo corretamente, estás usando a API do mapbox com seu Token na página do mapa. 😄
 
+---
 
 ### 🌐 Rodando o Servidor
 
@@ -189,5 +190,7 @@ Após a instalação das dependências e ter iniciado a aplicação mobile abrir
 - Crie uma branch com a sua feature: `git checkout -b minha-feature`;
 - Faça commit das suas alterações: `git commit -m 'feat: Minha nova feature'`;
 - Faça push para a sua branch: `git push origin minha-feature`.
+
+---
 
 Projeto desenvolvido durante a terceira edição do evento Next Level Week da 🚀[Rocketseat](https://rocketseat.com.br/)🚀.
