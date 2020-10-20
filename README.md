@@ -1,15 +1,12 @@
 # Happy
 
-![dashboard02](https://user-images.githubusercontent.com/68729858/96604892-fdc2df80-12cb-11eb-87d9-4452cf683017.png)
-
+<h1 align="center" >
+  <img alt="happy" title="happy" src="./assets/happy.png" />
+</h1>
 
 ## 💻 Projeto
 
 O Happy é uma aplicação que conecta pessoas à casas de acolhimento institucional para fazer o dia de muitas crianças mais feliz 💜
-
-<h1 align="center" >
-  <img alt="happy" title="happy" src="./assets/happy.png" />
-</h1>
 
 <h4 align="center"> 
 	🚧 Versão 2.0 em desenvolvimento 🚧
