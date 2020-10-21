@@ -6,7 +6,7 @@
 
 ## 💻 Projeto
 
-O Happy é uma aplicação que conecta pessoas à casas de acolhimento institucional para fazer o dia de muitas crianças mais feliz 💜
+Happy é uma aplicação desenvolvida em comemoração ao dia das crianças, com ela conseguimos conectar diversas casas de acolhimento institucional, realizando agendamentos de visitas para pessoas que querem fazer o dia dessas crianças mais felizes levando amor, esperança e alegria 💜
 
 <h4 align="center"> 
 	🚧 Versão 2.0 em desenvolvimento 🚧
@@ -29,7 +29,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ### Web
 
-- Em construção...
+<p>
+  <img src="./assets/home_web.png" alt="Happy Web" width="400px">
+  <img src="./assets/map_web.png" alt="Happy Map" width="400px">
+  <img src="./assets/web_login.png" alt="Happy Login Page" width="400px">
+  <img src="./assets/dados_web.png" alt="Happy Details" width="400px">
+</p>
 
 ### Mobile
 
