@@ -38,7 +38,14 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ### Mobile
 
-- Em construção...
+<p>
+  <img src="./assets/mobile1.jpg" alt="Happy Mobile map" width="200px">
+  <img src="./assets/mobile5.jpg" alt="Happy Mobile map 2" width="200px">
+  <img src="./assets/mobile3.jpg" alt="Happy Mobile create" width="200px">
+  <img src="./assets/mobile4.jpg" alt="Happy Mobile create" width="200px">
+  <img src="./assets/mobile6.jpg" alt="Happy Mobile details" width="200px">
+  <img src="./assets/mobile7.jpg" alt="Happy Mobile details" width="200px"> 
+</p>
 
 ---
 
