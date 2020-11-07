@@ -14,7 +14,7 @@ export default function CreateUser() {
 		<PageLogin />
 		
 		<aside>	
-			<form className="create-login" method="POST">
+			<form className="create-login" method="POST" action="orphanages/users">
 				<fieldset>
 					<legend>Cadastrar Usuário</legend>
 					<div className="input-block">

@@ -2,22 +2,35 @@ import Orphanage from '../models/Orphanage';
 import images_view from './images_view';
 
 export default {
-	render(orphanage: Orphanage) {
+	renderOne(orphanage: Orphanage) {
+		const {
+			id,
+			name,
+			phone,
+			latitude,
+			longitude,
+			about,
+			instructions,
+			open_on_weekends,
+			opening_hours,
+			images
+		} = orphanage
+
 		return {
-			id: orphanage.id,
-			name: orphanage.name,
-			phone: orphanage.phone,
-			latitude: orphanage.latitude,
-			longitude: orphanage.longitude,
-			about: orphanage.about,
-			instructions: orphanage.instructions,
-			opening_hours: orphanage.opening_hours,
-			open_on_weekends: orphanage.open_on_weekends,
-			images: images_view.renderMany(orphanage.images)
-		};
+			id,
+			name,
+			phone,
+			latitude,
+			longitude,
+			about,
+			instructions,
+			opening_hours,
+			open_on_weekends,
+			images: images_view.renderMany(images)
+		}
 	},
 
 	renderMany(orphanages: Orphanage[]) {
-		return orphanages.map(orphanage => this.render(orphanage));
+		return orphanages.map(orphanage => this.renderOne(orphanage));
 	}
-};
+}

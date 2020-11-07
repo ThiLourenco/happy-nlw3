@@ -2,4 +2,6 @@
 database.sqlite
 /uploads/*
 
+.env
+
 yarn-error.log
