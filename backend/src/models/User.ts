@@ -22,6 +22,7 @@ export default class User {
   @BeforeUpdate()
   async encryptPassword() {
     if (this.password_pass) {
+      
       this.password_pass = await bcrypt.hash(this.password_pass, 8);
     }
   }

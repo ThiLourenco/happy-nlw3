@@ -35,7 +35,6 @@ class UserController {
 
     return response.status(201).json(userView.render(user))
   }
-
 }
 
 export default new UserController();

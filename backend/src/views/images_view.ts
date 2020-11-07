@@ -12,7 +12,7 @@ export default {
 			url: `http://192.168.0.100:3333/uploads/${path}` /* app mobile */
 			//url: `http://localhost:3333/uploads/${image.path}` /* app web */
 			
-		};
+		}
 	},
 
 	renderMany(images: Image[]) {

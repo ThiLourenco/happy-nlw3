@@ -36,6 +36,7 @@ class AuthController {
       token,
     });
   }
+  
 }
 
 export default new AuthController();

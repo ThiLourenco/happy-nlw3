@@ -1,6 +1,7 @@
 /node_modules/
-database.sqlite
 /uploads/*
+
+database.sqlite
 
 .env
 

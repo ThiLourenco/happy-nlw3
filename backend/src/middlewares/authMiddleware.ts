@@ -21,7 +21,6 @@ export default function authMiddleware(
 
   try {
     const data = jwt.verify(token, process.env.JWT_TOKEN);
-//    console.log(data);
     const { id } = data as TokenPayload;
 
     // criado no express.d.ts um merge para tipar userId no Request do express
