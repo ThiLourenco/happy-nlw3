@@ -19,12 +19,12 @@ export default function Login() {
 					<legend>Fazer login</legend>
 					<div className="input-block">
 						<label htmlFor="email">E-mail</label>
-						<input id="name"/>	
+						<input id="email" type="email"/>	
 					</div>
 
 					<div className="input-block">
 						<label htmlFor="password">Senha</label>
-						<input id="name" />
+						<input id="password" type="password" />
 					</div>
 
 					<div className="remember-me">

@@ -1,5 +1,5 @@
 import { Column, Entity, PrimaryGeneratedColumn, BeforeInsert, BeforeUpdate } from 'typeorm';
-import bcrypt from 'bcryptjs';
+import bcrypt from 'bcrypt';
 
 @Entity('users')
 export default class User {
@@ -23,7 +23,7 @@ export default class User {
   async encryptPassword() {
     if (this.password_pass) {
       
-      this.password_pass = await bcrypt.hash(this.password_pass, 8);
+      this.password_pass = await bcrypt.hash(this.password_pass, 4);
     }
   }
 }
