@@ -19,15 +19,15 @@ class AuthController {
       return res.sendStatus(401);
     }
 
-    const isValidPassword = await bcrypt.compare(password, user.password_pass);
+    const isMatch = await bcrypt.compare(password, user.password_pass);
 
     // se senha estiver incorreta
-    if (!isValidPassword) {
+    if (!isMatch) {
       return res.sendStatus(401);
     }
 
     // se não cair em nenhuma das condições será autenticado gerando token
-    const token = jwt.sign({ id: user.id }, process.env.JWT_TOKEN, { expiresIn: '2h' });
+    const token = jwt.sign({ id: user.id }, process.env.JWT_PRIVATE_KEY, { expiresIn: '2h' });
 
     delete user.password_pass;
 

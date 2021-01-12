@@ -20,7 +20,7 @@ export default function authMiddleware(
   const token = authorization.replace('Bearer', '').trim();
 
   try {
-    const data = jwt.verify(token, process.env.JWT_TOKEN);
+    const data = jwt.verify(token, process.env.JWT_PUBLIC_KEY);
     const { id } = data as TokenPayload;
 
     // criado no express.d.ts um merge para tipar userId no Request do express
