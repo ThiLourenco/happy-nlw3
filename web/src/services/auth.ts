@@ -1,0 +1,1 @@
+export const isAuthenticate = () => true; // make auth

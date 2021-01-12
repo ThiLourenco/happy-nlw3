@@ -33,7 +33,7 @@ export default function Login() {
 					
 					</div>
 					<div className="links">
-							<Link to="/recover-password" className="forgot-password">
+							<Link to="/recover" className="forgot-password">
 								Esqueci a senha
 							</Link>
 
