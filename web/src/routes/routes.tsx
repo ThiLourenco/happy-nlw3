@@ -1,6 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
+import useAuth from '../hooks/useAuth';
+
+import AuthenticationRoute from './authRoute';
+import DashboardRoute from './dashboardRoute';
+
 import Landing from '../pages/Landing/Landing';
 import OrphanagesMap from '../pages/OrphanageMap/OrphanagesMap';
 import Orphanage from '../pages/Orphanage/Orphanage';
@@ -11,13 +16,12 @@ import PasswordReset from '../pages/PasswordReset/PasswordReset';
 import CreateUser from '../pages/CreateUser/CreateUser';
 import Login from '../pages/Login/Login';  
 
-//import PrivateRoute from '../services/privateRoute';
-import Dashboard from '../pages/Dashboard/Dashboard';
+
+
 
 function Routes() {
+	const { signed } = useAuth();
 	return (
-	
-		<BrowserRouter>
 			<Switch>
 				<Route path="/" exact component={Landing} />
 
@@ -26,14 +30,13 @@ function Routes() {
 				<Route path="/orphanages/create" exact component={CreateOrphanage} />
 				<Route path="/orphanages/:id" exact component={Orphanage} />
 
-				<Route path="/singin" exact component={Login} />
+				
 				<Route path="/singup" exact component={CreateUser} />
 				<Route path="/recover" exact component={RecoverPassword} />
 				<Route path="/password-reset" exact component={PasswordReset} />
-				<Route path="/singin" exact component={Dashboard} />
 
-			</Switch>
-		</BrowserRouter>				
+				{signed ? <DashboardRoute /> : <AuthenticationRoute />}
+			</Switch>					
 	);
 }
 

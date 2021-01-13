@@ -1,12 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FiArrowLeft } from 'react-icons/fi';
-import { Link, } from 'react-router-dom';
+import { Link, useHistory, } from 'react-router-dom';
 
+import useAuth from '../../hooks/useAuth';
 import PageLogin from "../../components/PageLogin/PageLogin";
 import './login.css';
 
 
 export default function Login() {
+	const [email, setEmail] = useState<string>('');
+	const [password, setPassword] = useState<string>('');
+	const { signIn } = useAuth();
+	const history = useHistory();
+
+	function handlerGoBack() {
+		history.goBack();
+	}
+
+	async function handleSignIn(event: React.MouseEvent<HTMLButtonElement>) {
+		event.preventDefault();
+
+		const button = event.currentTarget;
+
+		button.setAttribute('disabled', 'disabled');
+
+		if (email && password) {
+			try {
+				await signIn(email, password);
+			} catch (error) {
+				console.log('error', error);
+			}
+		} else {
+			console.log('Email e senha não informados!');
+		}
+		button.attributes.removeNamedItem('disabled');
+	}
 
 	return (
 		
@@ -14,17 +42,27 @@ export default function Login() {
 		<PageLogin />
 		
 		<aside>	
-			<form className="form-login" method="POST">
+			<form className="form-login">
 				<fieldset>
 					<legend>Fazer login</legend>
 					<div className="input-block">
 						<label htmlFor="email">E-mail</label>
-						<input id="email" type="email"/>	
+						<input 
+							id="email" 
+							type="email"
+							value={email}
+							onChange={event => setEmail(event.target.value)}
+							/>	
 					</div>
 
 					<div className="input-block">
 						<label htmlFor="password">Senha</label>
-						<input id="password" type="password" />
+						<input 
+							type="password"
+							id="password" 
+							value={password}
+							onChange={event => setPassword(event.target.value)}
+							/>
 					</div>
 
 					<div className="remember-me">
@@ -43,14 +81,17 @@ export default function Login() {
 						</div>
 				</fieldset>
 				
-				<button className="button-login" type="submit">
-					Entrar
-				</button>
+				<button 
+					disabled={false}
+					onClick={handleSignIn}
+					className="button-login" 
+					type="submit"
+					>Entrar</button>
 			</form>
 			
-			<Link to="/" className="back-home">
+			<button type="button" className="back-home" onClick={handlerGoBack}>
 					<FiArrowLeft size={26} color="#15C3D6"  />
-			</Link>
+			</button>
 			
 		</aside>
 	</div>
