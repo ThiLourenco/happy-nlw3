@@ -2,9 +2,9 @@ import React from 'react';
 import { FiArrowLeft } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
-import '../styles/pages/recoverpassword.css';
+import './recoverpassword.css';
 
-import PageLogin from "../components/PageLogin";
+import PageLogin from "../../components/PageLogin/PageLogin";
 
 
 

@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Landing from './pages/Landing';
-import OrphanagesMap from './pages/OrphanagesMap';
-import Orphanage from './pages/Orphanage';
-import CreateOrphanage from './pages/CreateOrphanage';
-import OrphanageSuccess from './pages/OrphanageSuccess';
-import RecoverPassword from './pages/RecoverPassword';
-import PasswordReset from './pages/PasswordReset';
-import CreateUser from './pages/CreateUser';
-import Login from './pages/Login';  
+import Landing from './pages/Landing/Landing';
+import OrphanagesMap from './pages/OrphanageMap/OrphanagesMap';
+import Orphanage from './pages/Orphanage/Orphanage';
+import CreateOrphanage from './pages/CreateOrphanages/CreateOrphanage';
+import OrphanageSuccess from './pages/OrphanageSuccess/OrphanageSuccess';
+import RecoverPassword from './pages/RecoverPassword/RecoverPassword';
+import PasswordReset from './pages/PasswordReset/PasswordReset';
+import CreateUser from './pages/CreateUser/CreateUser';
+import Login from './pages/Login/Login';  
 
 import PrivateRoute from './services/privateRoute';
 

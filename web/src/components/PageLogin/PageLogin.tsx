@@ -1,8 +1,8 @@
 import React from 'react';
 
-import logoLogin from '../images/logotipo.svg';
+import logoLogin from '../../images/logotipo.svg';
 
-import '../styles/components/pagelogin.css';
+import './pagelogin.css';
 
 export default function PageLogin() {
 	return (

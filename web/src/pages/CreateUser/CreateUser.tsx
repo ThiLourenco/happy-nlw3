@@ -2,8 +2,8 @@ import React from 'react';
 import { FiArrowLeft } from 'react-icons/fi';
 import { Link, } from 'react-router-dom';
 
-import PageLogin from "../components/PageLogin";
-import '../styles/pages/createuser.css';
+import PageLogin from "../../components/PageLogin/PageLogin";
+import './createuser.css';
 
 
 export default function CreateUser() {

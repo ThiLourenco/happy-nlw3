@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import ImgSuccess from '../images/success.svg';
-import '../styles/pages/orphanage-success.css';
+import ImgSuccess from '../../images/success.svg';
+import './orphanage-success.css';
 
 function OrphanageSuccess() {
   return (

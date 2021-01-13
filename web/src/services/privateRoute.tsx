@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Redirect, RouteProps } from 'react-router-dom'
-import { isAuthenticate } from './auth';
+import { isAuth } from './auth';
 
 function PrivateRoute({ component: Component, ...rest }: RouteProps) {
 	if (!Component) return null;
@@ -8,12 +8,15 @@ function PrivateRoute({ component: Component, ...rest }: RouteProps) {
 	<Route 
 		{...rest} 
 		render={props => 
-		isAuthenticate() ? (
+		isAuth() ? (
 			<Component {...props} />
 		) : (
 			<Redirect to={{ 
 				pathname: '/singin', 
-				state: { from: props.location } }} />
+				state: { 
+					from: props.location ,
+					message: 'Usuário não autorizado' } 
+				}} />
 		)
 	}
 	/>
