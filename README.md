@@ -29,15 +29,16 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ### Web
 
+<!-- 
 <p>
   <img src="./assets/home_web.png" alt="Happy Web" width="400px">
   <img src="./assets/map_web.png" alt="Happy Map" width="400px">
   <img src="./assets/web_login.png" alt="Happy Login Page" width="400px">
   <img src="./assets/dados_web.png" alt="Happy Details" width="400px">
 </p>
-
+-->
 ### Mobile
-
+<!--
 <p>
   <img src="./assets/mobile1.jpg" alt="Happy Mobile map" width="200px">
   <img src="./assets/mobile5.jpg" alt="Happy Mobile map 2" width="200px">
@@ -46,7 +47,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
   <img src="./assets/mobile6.jpg" alt="Happy Mobile details" width="200px">
   <img src="./assets/mobile7.jpg" alt="Happy Mobile details" width="200px"> 
 </p>
-
+-->
 ---
 
 <h2 id="features-implementadas"> 🚧 Features implementadas da Versão 2.0 </h2>
